@@ -16,11 +16,6 @@ export default function Index() {
     }
   }, []);
 
-  const deleteProductHandler = (e) => {
-    deleteProduct(e.target.id);
-    setProductsList(getAllProducts());
-  };
-
   return (
     <div>
       {/* Main components */}
@@ -50,15 +45,6 @@ export default function Index() {
                       Edit Product
                     </Card.Link>
                   </Link>
-                  <Card.Link
-                    id={product.id}
-                    className="text-danger"
-                    onClick={(e) => {
-                      deleteProductHandler(e);
-                    }}
-                  >
-                    Delete Product
-                  </Card.Link>
                 </Card.Body>
               </Card>
             </Link>
