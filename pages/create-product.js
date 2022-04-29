@@ -93,7 +93,7 @@ export default function CreateProduct() {
           </Form.Group>
 
           <Button
-            className="mt-3"
+            className="mt-3 mb-5"
             variant="dark"
             type="submit"
             onSubmit={submitFormHandler}
